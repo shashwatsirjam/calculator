@@ -1,0 +1,146 @@
+body {
+  padding: 0%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.container {
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #ffffff;
+  padding-bottom: 40px;
+  background-color: #ecf0f3;
+}
+
+.display #screen {
+  width: 97%;
+  height: 70px;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  text-align: right;
+  padding-right: 0.5em;
+  background: #ecf0f3;
+  border-radius: 6px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.btns {
+  width: 100%;
+  margin-top: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btnss {
+  width: 100%;
+  margin-top: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 4%;
+}
+
+.btns .row button {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+  transition: 0.1s;
+}
+.btnss .rows button {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+  transition: 0.1s;
+}
+
+.btns .row button:hover {
+  box-shadow: inset 5px 5px 8px rgba(16, 16, 16, 0.1), inset -5px -5px 8px #fff;
+  background: #fff;
+  cursor: pointer;
+}
+.btnss .rows button:hover {
+  box-shadow: inset 5px 5px 8px rgba(16, 16, 16, 0.1), inset -5px -5px 8px #fff;
+  background: #fff;
+  cursor: pointer;
+}
+
+#conta {
+  display: none;
+}
+
+@media screen and (max-width: 1245px) {
+  .btns .row button {
+    width: 60px;
+  }
+  .display #screen {
+    margin-left: -2px;
+  }
+}
+@media screen and (max-width: 978px) {
+  .btns .row button {
+    width: 40px;
+  }
+  .display #screen {
+    margin-left: -5px;
+  }
+
+  @media (max-device-width: 720px) {
+    .btns .row {
+      display: none;
+    }
+    #conta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 673px) {
+    .btnss .rows button {
+      width: 65px;
+    }
+    .display #screen {
+      margin-left: -5px;
+    }
+    .btnss {
+      padding-left: 5%;
+    }
+  }
+  @media screen and (max-width: 523px) {
+    .btnss .rows button {
+      width: 50px;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .btnss .rows button {
+      width: 40px;
+    }
+    .btnss {
+      padding-left: 1%;
+    }
+  
+    .display #screen {
+      margin-left: -8px;
+    }
+}
